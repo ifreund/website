@@ -1,6 +1,7 @@
 <nav>
-	<a href="{{ .Site.BaseURL }}/blog">blog</a> -
-	<a href="https://github.com/ifreund">github</a> -
-	<a href="{{ .Site.BaseURL }}/public_key.txt">pgp</a> -
+    {{- if not .IsHome }}<a href="{{ .Site.BaseURL }}">ifreund.xyz</a> &middot;{{ end }}
+	<a href="{{ .Site.BaseURL }}/blog">blog</a> &middot;
+	<a href="https://github.com/ifreund">github</a> &middot;
+	<a href="{{ .Site.BaseURL }}/public_key.txt">pgp</a> &middot;
 	<a href="mailto:ifreund@ifreund.xyz">email</a>
 </nav>
