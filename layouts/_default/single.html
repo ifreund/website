@@ -1,9 +1,7 @@
 {{ partial "head.html" . }}
 
+{{ partial "nav.html" . }}
 
-<article id="post">
-	{{ partial "nav.html" . }}
-	{{ .Content }}
-</article>
+{{ .Content }}
 
 {{ partial "foot.html" . }}
