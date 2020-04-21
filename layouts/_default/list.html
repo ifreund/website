@@ -1,7 +1,14 @@
-<ul>
-	{{ range .Paginator.Pages }}
-		<li>
-			<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-		</li>
-	{{ end }}
-</ul>
+{{ partial "head.html" . }}
+
+{{ partial "nav.html" . }}
+
+<h1>Blog</h1>
+
+{{ range .Paginator.Pages }}
+	<h3>
+		<a href="{{ .Permalink }}">{{ .Title }}</a>
+	</h3>
+	<time>{{- .Date.Format "2006-01-02" -}}</time>
+{{ end }}
+
+{{ partial "foot.html" . }}
