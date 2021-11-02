@@ -3,8 +3,6 @@ title: "Hello World"
 date: 2020-04-21T12:38:56+02:00
 draft: false
 ---
-# Hello World
-
 I've finally done it. I've taken the time to learn enough about web development
 to set up my own blog. I may tweak the styling a little in the future, but I
 think the bare bones look will never really be out of date.

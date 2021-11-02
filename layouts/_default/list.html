@@ -2,13 +2,17 @@
 
 {{ partial "nav.html" . }}
 
-<h1>Blog</h1>
+<div class="title">
+	<h1>Blog</h1>
+</div>
 
 {{ range .Pages }}
-	<h3>
-		<a href="{{ .Permalink }}">{{ .Title }}</a>
-	</h3>
-	<time>{{- .Date.Format "2006-01-02" -}}</time>
+	<div class="row">
+		<time>{{ .Date.Format "2006-01-02" }}</time>
+		<h3 class="list-heading">
+			<a href="{{ .Permalink }}">{{ .Title }}</a>
+		</h3>
+	</div>
 {{ end }}
 
 {{ partial "foot.html" . }}

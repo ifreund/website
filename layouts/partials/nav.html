@@ -1,9 +1,9 @@
-<nav>
+<nav class="row">
 	{{- if not .IsHome }}
 	<a href="{{ .Site.BaseURL }}">
 		{{ partial "logo.svg" . }}
 	</a>
-	{{ end }}
+	{{- end }}
 	<div>
 		&nbsp;
 		<a href="{{ .Site.BaseURL }}/blog">blog</a> &middot;

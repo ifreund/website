@@ -3,9 +3,9 @@ a {
 }
 
 body {
-	margin: 1em auto;
-	max-width: 40em;
-	padding:0 .62em;
+	margin: 0em auto;
+	max-width: 50em;
+	padding: 1em;
 	font: 1.2em/1.62 monospace;
 }
 
@@ -17,8 +17,16 @@ body {
 	}
 }
 
-h1 {
+.title {
+    margin-top: 1.5em;
+}
+
+.title h1 {
+    margin-top: 0em;
 	border-bottom: 2px solid;
+}
+.title time {
+    text-align: right;
 }
 
 main {
@@ -30,8 +38,8 @@ main {
 }
 
 main h1 {
-	border-bottom: 0px;
-	margin-bottom: 0px;
+	border-bottom: 0em;
+	margin-bottom: 0em;
 }
 
 main svg {
@@ -39,14 +47,22 @@ main svg {
 	height: 100px;
 }
 
-nav {
+.row {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+}
+
+.row time {
+    white-space: nowrap;
 }
 
 nav svg {
 	width: 30px;
 	height: 30px;
 	display: block;
+}
+
+.list-heading {
+    margin: 0.5em;
 }
