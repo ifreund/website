@@ -1,7 +1,14 @@
 <nav>
-    {{- if not .IsHome }}<a href="{{ .Site.BaseURL }}">home</a> &middot;{{ end }}
-	<a href="{{ .Site.BaseURL }}/blog">blog</a> &middot;
-	<a href="https://github.com/ifreund">github</a> &middot;
-	<a href="{{ .Site.BaseURL }}/public_key.txt">pgp</a> &middot;
-	<a href="mailto:mail@isaacfreund.com">email</a>
+	{{- if not .IsHome }}
+	<a href="{{ .Site.BaseURL }}">
+		{{ partial "logo.svg" . }}
+	</a>
+	{{ end }}
+	<div>
+		&nbsp;
+		<a href="{{ .Site.BaseURL }}/blog">blog</a> &middot;
+		<a href="https://github.com/ifreund">github</a> &middot;
+		<a href="{{ .Site.BaseURL }}/public_key.txt">pgp</a> &middot;
+		<a href="mailto:mail@isaacfreund.com">email</a>
+	</div>
 </nav>

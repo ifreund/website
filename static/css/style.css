@@ -9,11 +9,19 @@ body {
 	font: 1.2em/1.62 monospace;
 }
 
-h1 {
-	border-bottom: 2px solid black;
+@media (prefers-color-scheme: dark) {
+	* {
+		color: white;
+		background: black;
+		fill: white;
+	}
 }
 
-#homepage {
+h1 {
+	border-bottom: 2px solid;
+}
+
+main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -21,7 +29,24 @@ h1 {
 	min-height: 75vh;
 }
 
-#homepage h1 {
+main h1 {
 	border-bottom: 0px;
 	margin-bottom: 0px;
+}
+
+main svg {
+	width: 100px;
+	height: 100px;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+nav svg {
+	width: 30px;
+	height: 30px;
+	display: block;
 }
