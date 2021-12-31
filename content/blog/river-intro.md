@@ -1,6 +1,6 @@
 ---
 title: "Introducing River, a Dynamic Tiling Wayland Compositor"
-date: 2021-11-03T00:00:00+02:00
+date: 2021-11-03T00:00:00
 draft: false
 ---
 In the spring of 2020 I found myself hooked on Wayland thanks to
