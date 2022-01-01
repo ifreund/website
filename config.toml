@@ -5,3 +5,14 @@ title = "Isaac Freund"
 # Without this hugo sticks a <meta name="generator" content="Hugo 0.87.0" />
 # in the output...
 disableHugoGeneratorInject = true
+
+[outputs]
+home = [ "HTML" ]
+section = [ "HTML", "Atom" ]
+
+[outputFormats.Atom]
+mediaType = "application/atom+xml"
+baseName = "feed"
+
+[mediaTypes."application/atom+xml"]
+suffixes = [ "xml" ]
