@@ -1,32 +1,49 @@
-a {
-	color: inherit;
+:root {
+	--fg: black;
+	--bg: white;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--fg: white;
+		--bg: #1a1a1a;
+	}
 }
 
 body {
+	color: var(--fg);
+	background-color: var(--bg);
+	fill: var(--fg);
+
 	margin: 0em auto;
 	max-width: 50em;
 	padding: 1em;
 	font: 1.2em/1.62 monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-	* {
-		color: white;
-		background: #1a1a1a;
-		fill: white;
-	}
+a {
+	color: var(--fg);
+	fill: var(--fg);
+	background-color: var(--bg);
+}
+
+a:hover {
+	color: var(--bg);
+	fill: var(--bg);
+	background-color: var(--fg);
+	text-decoration: none;
 }
 
 .title {
-    margin-top: 1.5em;
+	margin-top: 1.5em;
 }
 
 .title h1 {
-    margin-top: 0em;
+	margin-top: 0em;
 	border-bottom: 2px solid;
 }
 .title time {
-    text-align: right;
+	text-align: right;
 }
 
 main {
@@ -54,15 +71,21 @@ main svg {
 }
 
 .row time {
-    white-space: nowrap;
+	white-space: nowrap;
 }
 
 nav svg {
 	width: 30px;
 	height: 30px;
 	display: block;
+	border-style: solid;
+	border-color: var(--bg);
+}
+
+nav svg:hover {
+	border-color: var(--fg);
 }
 
 .list-heading {
-    margin: 0.5em;
+	margin: 0.5em;
 }
