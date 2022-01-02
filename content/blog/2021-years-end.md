@@ -44,7 +44,7 @@ In retrospect, it was nice to allow bug reports to trickle in for another couple
 I ended up changing domains for my personal website and email from ifreund.xyz to isaacfreund.com after reading [this post](https://www.spotvirtual.com/blog/the-perils-of-an-xyz-domain/) in October.
 It makes me sad that this is the way things are, but I'd rather die on a different hill.
 I set up [GitHub Sponsors](https://github.com/sponsors/ifreund) and [Liberapay](https://liberapay.com/ifreund) around this time and was pleasantly surprised to immediately see some support.
-Thank you to all my current sponsors, you helping make my open source work sustainable in the long term.
+Thank you to all my current sponsors, you are helping make my open source work sustainable in the long term!
 
 On the river front, I spent October fixing every bug I could and finally tagged the [river 0.1.0 release](https://github.com/riverwm/river/releases/tag/v0.1.0) on November 2nd.
 If you haven't yet seen my [blog post introducing river](https://isaacfreund.com/blog/river-intro) you may want to check that out.
