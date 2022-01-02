@@ -10,4 +10,5 @@ rm -r public
 hugo || exit 1
 rm -r "${target}"/*
 cp -r public/* "${target}"
-git -C "${target}" commit -am "Regenerate website"
+git -C "${target}" add -A
+git -C "${target}" commit -m "Regenerate website"
