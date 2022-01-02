@@ -18,7 +18,11 @@ body {
 	margin: 0em auto;
 	max-width: 50em;
 	padding: 1em;
-	font: 1.2em/1.62 monospace;
+	font: 1.2em/1.6 monospace;
+}
+
+p {
+	font: 0.8em/1.3 sans-serif;
 }
 
 a {
