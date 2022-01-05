@@ -26,7 +26,7 @@ We'd been discussing and working on this off and on for ~6 months at that point 
 As is normal with such large changes, there were still some rough edges to be smoothed out and I [bumped the protocol to version 2 and removed the river-options protocol](https://github.com/riverwm/river/pull/274) shortly afterwards.
 
 One of the critical missing features for river at this point in time was damage tracking support to improve performance and save battery life.
-To remedy this I [implementated](https://github.com/riverwm/river/pull/296) basic yes/no damage tracking in May.
+To remedy this I [implemented](https://github.com/riverwm/river/pull/296) basic yes/no damage tracking in May.
 
 [Zig 0.8.0](https://ziglang.org/download/0.8.0/release-notes.html) was released in the first week of June, which included several improvements I made to Zig's handling of linking libc.
 These improvements directly affected users building river, solving a few long-standing issues on that front.
