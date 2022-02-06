@@ -6,6 +6,7 @@
 	<h1>Blog</h1>
 </div>
 
+<div class="content">
 {{ range .Pages }}
 	<div class="row">
 		<time>{{ .Date.Format "2006-01-02" }}</time>
@@ -14,5 +15,6 @@
 		</h3>
 	</div>
 {{ end }}
+</div>
 
 {{ partial "foot.html" . }}
