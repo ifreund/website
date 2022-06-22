@@ -8,6 +8,9 @@ fi
 
 rm -r public
 hugo || exit 1
+mkdir -p public/goatcounter
+curl https://gc.zgo.at/count.js > public/goatcounter/count.js
+
 rm -r "${target}"/*
 cp -r public/* "${target}"
 git -C "${target}" add -A
