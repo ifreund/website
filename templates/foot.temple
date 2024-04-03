@@ -6,4 +6,5 @@
 		<a href="{{ .Site.BaseURL }}blog/feed.xml">Atom Feed</a>
 	</footer>
 	{{- end }}
+	</body>
 </html>
