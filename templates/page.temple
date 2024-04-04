@@ -13,7 +13,7 @@
 </div>
 
 <div class="content">
-	<p>{{ (get-in args [:_item :body]) }}</p>
+	{- (bagatto/markdown->html (get-in args [:_item :body])) -}
 </div>
 
 {% (bagatto/include "/templates/foot") %}

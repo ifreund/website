@@ -1,8 +1,6 @@
----
-title: "Introducing River, a Dynamic Tiling Wayland Compositor"
-date: 2021-11-03T00:00:00
-draft: false
----
+{:title "Introducing River, a Dynamic Tiling Wayland Compositor"
+ :date "2021-11-03"}
+%%%
 In the spring of 2020 I found myself hooked on Wayland thanks to
 [sway](https://swaywm.org/) but increasingly frustrated with the
 [i3](https://i3wm.org/) style window management sway implements.

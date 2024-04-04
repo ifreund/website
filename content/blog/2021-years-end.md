@@ -1,8 +1,6 @@
----
-title: "2021 Year's End Status Update"
-date: 2022-01-01T00:00:00
-draft: false
----
+{:title "2021 Year's End Status Update"
+ :date "2022-01-01"}
+%%%
 Hello all!
 This is my first ever status update so I've ambitiously decided to cover all of 2021.
 In the future I intend to write these updates on a monthly basis and provide a bit more detail.
