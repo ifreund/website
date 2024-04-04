@@ -1,12 +1,6 @@
 {% (bagatto/include "/templates/head") %}
 
-<nav class="row">
-	<a href="/">
-		{% (bagatto/include "/templates/logo") %}
-	</a>
-	&nbsp;
-	{% (bagatto/include "/templates/nav-items") %}
-</nav>
+{% (bagatto/include "/templates/nav-full") %}
 
 <div class="title">
 	<h1>{{ (get-in args [:_item :title]) }}</h1>

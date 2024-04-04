@@ -1,0 +1,7 @@
+<nav class="row">
+	<a href="/">
+		{% (bagatto/include "/templates/logo") %}
+	</a>
+	&nbsp;
+	{% (bagatto/include "/templates/nav-items") %}
+</nav>
