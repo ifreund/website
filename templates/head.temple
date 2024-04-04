@@ -2,10 +2,9 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<title>{{ (args :title) }}</title>
+		<title>{{ (get-in args [:_item :title]) }}</title>
 		<link rel="icon" href="/if.png">
 		<link rel="stylesheet" href="/style.css">
-		<!-- TODO only do blog xml on blog pages -->
 		<link rel="alternate" title="Isaac Freund's Blog" type="application/atom+xml"
 			href="/blog/feed.xml"/>
 		<link rel="me" href="https://hachyderm.io/@ifreund"/>

@@ -1,10 +1,8 @@
-	{{- if not .IsHome }}
 	<footer>
-		© 2021-{{ now.Year }} Isaac Freund &middot;
+		© 2021-{{ (get-in args [:config :last-commit-time]) }} Isaac Freund &middot;
 		Content <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a> &middot;
 		<a href="https://github.com/ifreund/website">Source Code</a> <a href="https://spdx.org/licenses/0BSD.html">0BSD</a> &middot;
-		<a href="{{ .Site.BaseURL }}blog/feed.xml">Atom Feed</a>
+		<a href="/blog/feed.xml">Atom Feed</a>
 	</footer>
-	{{- end }}
 	</body>
 </html>
