@@ -6,10 +6,10 @@ if [ -z "$target" ]; then
 	exit 1
 fi
 
-rm -r public
-hugo || exit 1
+rm -r out
+bag index.janet || exit 1
 
 rm -r "${target}"/*
-cp -r public/* "${target}"
+cp -r out/* "${target}"
 git -C "${target}" add -A
 git -C "${target}" commit -m "Regenerate website"
