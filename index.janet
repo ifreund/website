@@ -9,7 +9,7 @@
                         :transform (bagatto/attr-sorter :date :descending)}
            :404 {:src "content/404.md"
                  :attrs bagatto/parse-mago}
-		   :static {:src (bagatto/* "static/*")
+           :static {:src (bagatto/* "static/*")
                     :attrs bagatto/parse-base}})
 
 (def site {:index {:dest "index.html"
@@ -18,10 +18,10 @@
                         :out (bagatto/renderer "/templates/blog-index")}
            :blog-posts {:each :blog-posts
                         :dest (fn [_ item]
-                          (string/format "blog/%s/index.html" (item :slug)))
+                                (string/format "blog/%s/index.html" (item :slug)))
                         :out (bagatto/renderer "/templates/page")}
            :404 {:dest "404.html"
                  :out (fn [data]
-                   (bagatto/render "/templates/page" data (data :404)))}
+                        (bagatto/render "/templates/page" data (data :404)))}
            :static {:each :static
                     :dest (bagatto/path-copier "")}})

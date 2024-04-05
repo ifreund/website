@@ -1,7 +1,7 @@
 {% (bagatto/include "/templates/head") %}
 
 <main>
-    {% (bagatto/include "/templates/logo") %}
+	{% (bagatto/include "/templates/logo") %}
 
 	<h1>Isaac Freund</h1>
 	I create things.
