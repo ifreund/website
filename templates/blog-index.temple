@@ -12,12 +12,12 @@
 	<div class="row">
 		<time>%s</time>
 		<h3 class="list-heading">
-			<a href="/%s">%s</a>
+			<a href="/blog/%s">%s</a>
 		</h3>
 	</div>
 ```
 	(post :date)
-	(post :dest)
+	(post :slug)
 	(post :title))) %}
 </div>
 

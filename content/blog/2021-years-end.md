@@ -1,4 +1,5 @@
 {:title "2021 Year's End Status Update"
+ :slug "2021-years-end"
  :date "2022-01-01"}
 %%%
 Hello all!
