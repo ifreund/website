@@ -3,7 +3,8 @@
 (def last-commit-time
   (string/slice (sh/$< git show -s --format=%as) 0 4))
 
-(def data {:config {:attrs {:last-commit-time last-commit-time}}
+(def data {:config {:attrs {:base-url "https://isaacfreund.com"
+                            :last-commit-time last-commit-time}}
            :blog-posts {:src (bagatto/slurp-* "content/blog/*")
                         :attrs bagatto/parse-mago
                         :transform (bagatto/attr-sorter :date :descending)}
@@ -16,6 +17,8 @@
                    :out (bagatto/renderer "/templates/index")}
            :blog-index {:dest "blog/index.html"
                         :out (bagatto/renderer "/templates/blog-index")}
+           :blog-feed {:dest "blog/feed.xml"
+                       :out (bagatto/renderer "/templates/blog-feed")}
            :blog-posts {:each :blog-posts
                         :dest (fn [_ item]
                                 (string/format "blog/%s/index.html" (item :slug)))

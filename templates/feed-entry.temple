@@ -1,0 +1,8 @@
+<entry>
+  <title>{{ (args :title) }}</title>
+  <link href="{{ (args :url) }}"/>
+  <id>{{ (args :url) }}</id>
+  <published>{{ (args :date) }}T00:00:00Z</published>
+  <updated>{{ (args :date) }}T00:00:00Z</updated>
+  <content type="html">{{ (bagatto/markdown->html (args :body)) }}</content>
+</entry>
