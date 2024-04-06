@@ -3,7 +3,7 @@
 {% (bagatto/include "/templates/nav-full") %}
 
 <div class="title">
-	<h1>Blog</h1>
+	<h1>{{ (get-in args [:_item :title]) }}</h1>
 </div>
 
 <div class="content">
