@@ -1,10 +1,10 @@
 (bagatto/set-output-dir! "out")
 
-(def last-commit-time
+(def git-commit-year
   (string/slice (sh/$< git show -s --format=%as) 0 4))
 
 (def data {:config {:attrs {:base-url "https://isaacfreund.com"
-                            :last-commit-time last-commit-time}}
+                            :git-commit-year git-commit-year}}
            :blog-posts {:src (bagatto/slurp-* "content/blog/*")
                         :attrs bagatto/parse-mago
                         :transform (bagatto/attr-sorter :date :descending)}
