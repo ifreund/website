@@ -4,7 +4,7 @@
   <link href="{{ (get-in args [:config :base-url]) }}/blog/"/>
   <link rel="self" href="{{ (get-in args [:config :base-url]) }}/blog/feed.xml"
     type="application/atom+xml"/>
-  <id>{{ (get-in args [:config :base-url]) }}/feed.xml</id>
+  <id>{{ (get-in args [:config :base-url]) }}/blog/feed.xml</id>
   <author>
     <name>Isaac Freund</name>
     <email>mail@isaacfreund.com</email>
