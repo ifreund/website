@@ -5,6 +5,7 @@
 
 (def data {:config {:attrs {:base-url "https://isaacfreund.com"
                             :git-commit-year git-commit-year}}
+           :index {:attrs {:title "Isaac Freund"}}
            :blog-posts {:src (bagatto/slurp-* "content/blog/*")
                         :attrs bagatto/parse-mago
                         :transform (bagatto/attr-sorter :date :descending)}
@@ -14,7 +15,8 @@
                     :attrs bagatto/parse-base}})
 
 (def site {:index {:dest "index.html"
-                   :out (bagatto/renderer "/templates/index")}
+                   :out (fn [data]
+                          (bagatto/render "/templates/index" data (data :index)))}
            :blog-index {:dest "blog/index.html"
                         :out (bagatto/renderer "/templates/blog-index")}
            :blog-feed {:dest "blog/feed.xml"

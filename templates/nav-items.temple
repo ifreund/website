@@ -1,6 +1,6 @@
 <div>
-	<a href="{{ (args :root) }}/blog">blog</a> &middot;
+	<a href="/blog">blog</a> &middot;
 	<a href="https://github.com/ifreund">github</a> &middot;
-	<a href="{{ (args :root) }}/public_key.txt">pgp</a> &middot;
+	<a href="/public_key.txt">pgp</a> &middot;
 	<a href="mailto:mail@isaacfreund.com">email</a>
 </div>
