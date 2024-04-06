@@ -3,6 +3,8 @@
 {% (bagatto/include "/templates/nav-full") %}
 
 <div class="title">
+	{% (if-let [date (get-in args [:_item :date])]
+	     (printf "<time>%s</time>" date)) %}
 	<h1>{{ (get-in args [:_item :title]) }}</h1>
 </div>
 
