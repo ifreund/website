@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>{{ (get-in args [:_item :title]) }}</title>
 		<link rel="icon" href="/if.png">
 		<link rel="stylesheet" href="/style.css">
-		<link rel="alternate" href="/blog/feed.xml" type="application/atom+xml"/>
-		<link rel="me" href="https://hachyderm.io/@ifreund"/>
+		<link rel="alternate" href="/blog/feed.xml" type="application/atom+xml">
+		<link rel="me" href="https://hachyderm.io/@ifreund">
 	</head>
 	<body>
