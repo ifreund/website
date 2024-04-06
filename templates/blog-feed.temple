@@ -2,7 +2,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Isaac Freund's Blog</title>
   <link href="{{ (get-in args [:config :base-url]) }}/blog/"/>
-  <link rel="self" href="{{ (get-in args [:config :base-url]) }}/blog/feed.xml"/>
+  <link rel="self" href="{{ (get-in args [:config :base-url]) }}/blog/feed.xml"
+    type="application/atom+xml"/>
   <id>{{ (get-in args [:config :base-url]) }}/feed.xml</id>
   <author>
     <name>Isaac Freund</name>
