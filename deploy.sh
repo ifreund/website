@@ -4,8 +4,8 @@ set -e
 
 target=$1
 if [ -z "$target" ]; then
-	echo "argument required: target directory"
-	exit 1
+  echo "argument required: target directory"
+  exit 1
 fi
 
 rm -r out

@@ -3,22 +3,22 @@
 {% (bagatto/include "/templates/nav-full") %}
 
 <div class="title">
-	<h1>{{ (get-in args [:_item :title]) }}</h1>
+  <h1>{{ (get-in args [:_item :title]) }}</h1>
 </div>
 
 <div class="content">
-	{% (each post (args :blog-posts) (printf
+  {% (each post (args :blog-posts) (printf
 ```
-	<div class="row">
-		<time>%s</time>
-		<h3 class="list-heading">
-			<a href="/blog/%s/">%s</a>
-		</h3>
-	</div>
+  <div class="row">
+    <time>%s</time>
+    <h3 class="list-heading">
+      <a href="/blog/%s/">%s</a>
+    </h3>
+  </div>
 ```
-	(post :date)
-	(post :slug)
-	(post :title))) %}
+  (post :date)
+  (post :slug)
+  (post :title))) %}
 </div>
 
 {% (bagatto/include "/templates/foot") %}
