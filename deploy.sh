@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 target=$1
 if [ -z "$target" ]; then
 	echo "argument required: target directory"
@@ -7,7 +9,8 @@ if [ -z "$target" ]; then
 fi
 
 rm -r out
-bag index.janet || exit 1
+bag index.janet
+minify -v --output . -r out
 
 rm -r "${target}"/*
 cp -r out/* "${target}"
